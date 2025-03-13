@@ -1,6 +1,6 @@
 import React from 'react'
-import {Login} from "../pages/Login";
-import {Main} from "../pages/Main";
+import {Login} from "../pages/loginPage/Login.tsx";
+import {Main} from "../pages/mainPage/Main.tsx";
 
 interface RouteProps {
     page:  React.ComponentType

@@ -1,0 +1,68 @@
+/* Общий стиль контейнера калькулятора */
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.display {
+    text-align: right;
+    font-size: 48px;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    border: none;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+
+button.number {
+    background-color: #333;
+    color: #fff;
+}
+
+button.number:hover {
+    background-color: #555;
+}
+
+/* Кнопки специальных операций (÷, x, -, +, =) */
+button.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+button.operator:hover {
+    background-color: #ffa23a;
+}
+
+button.clear {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+button.clear:hover {
+    background-color: #b5b5b5;
+}
+
+button:active {
+    transform: scale(0.93);
+}
